@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshil Bhuva Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8d221f2ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-----------------frontpage------------------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sitemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Harshil</span><br>Bhuva From India.</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-----------------about section------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="images/photo_2022-10-20_21-13-03.jpg">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p> I'm Harshil Bhuva,an AI-ML Engineer and Web Application Devloper.currently,I am studing at 
+                        Gujrat Technological University in field of AI Engineer.In 2022, I decided to set up my own freelance 
+                        business, which has led me on an exciting journey. Every day I love being able to work directly with a
+                        wonderful group of clients, discussing their challenges, sharing my knowledge and helping others. </p>
+
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!--skills-->
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Applications interfaces</li>
+                            <li><span>Web Development</span><br>Web Applications Development</li>
+                            <li><span>AI-ML</span><br>Building Models Related to AI-ML </li>
+                        </ul>
+                    </div>
+
+                    <!--experience-->
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>2020</span><br>AI-ML Engineer Training at GTU.</li>
+                            <li><span>2022</span><br>Internship at iNeuron.ai.</li>
+                            <li><span>2021</span><br>freelancing on online platform.</li>
+                        </ul>
+                    </div>
+
+                    <!--education-->
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Internship at iNeuron.ai.</li>
+                            <li><span>2020</span><br>AI-ML Engineer Training at GTU.</li>
+                            <li><span>2018</span><br>HSC from JA Surat.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------services------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="serviceslist">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI-UX</h2>
+                    <p>User experience design is the process of defining the experience a user would
+                         go through when interacting with a digital product or website. </p>
+                    <a href="https://en.wikipedia.org/wiki/User_experience_design">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>AI Models</h2>
+                    <p>Artificial intelligence (AI) is intelligence demonstrated by machines, 
+                        as opposed to the natural intelligence displayed by animals and humans.</p>
+                    <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Learn More</a>
+                </div>
+
+               
+            </div>
+
+
+        </div>
+    </div>
+
+    <!---------------------portfolio---------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A portfolio website is a unique way to showcase your work and let others know about yourself. 
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Machine Learning Model</h3>
+                        <p>This Model Analysis on Titanic Dataset and Predict the Survived peoples. 
+                        </p>
+                        <a href="titanic data analysis.ipynb"><i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This Project is currently  on Working process.....
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------------contact---------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>harshilbhuva77@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9537611678</p>
+                    <div class="socialicons">
+                        <a href="https://www.facebook.com/harshil.bhuva.146"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/harshil_bhuva_07?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harshil-bhuva-185200207"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Harshil-7"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="contactright">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2022,Harshil Bhuva Portfolio.All Rights reserved. </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("activelink");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+    </script>
+    <script>
+
+        var sidemenu=document.getElementById("sitemenu");
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
